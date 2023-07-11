@@ -3,6 +3,8 @@
   font-family: 'Comfortaa', cursive;
 }
 .topnav {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
   background-color: #99cc99;
   position: fixed; 
   left: 0px;
@@ -19,7 +21,7 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .topnav a:hover {
@@ -41,11 +43,19 @@
   grid-template-rows: 500px auto;
 }
 .footer {
+  display: grid;
+  grid-template-rows: auto auto;
+  row-gap: 10px;
   position: fixed; 
   background-color: #99cc99;
   bottom: 0; 
   width: 100%; 
   left: 0;
+  opacity: 0.7;
+}
+.footer a{
+  font-size: 16px;
+  right: 0;
 }
 .logo{
   display: grid;
@@ -82,4 +92,19 @@
 .data p{
   display: grid;
   justify-items: center;
+}
+.foot_ref{
+  display: grid;
+  justify-items: center;
+}
+.foot_link{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.foot_link a{
+  color: #235d3a;
+}
+.footer p{
+  color: #235d3a;
+  font-size: 20px;
 }
